@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function LoginForm(){
+function CadastroForm(){
     return (
         <div className="login-form">
-            <h1>Login</h1>
+            <h1>Cadastro</h1>
             <form>
                 <div className="input-box">
                     <input type="text" placeholder="email"/>
@@ -13,19 +13,15 @@ function LoginForm(){
                     <input type="password" placeholder="senha"/>
                     <i className='bx bxs-lock-alt'></i>
                 </div>
-                <div className="remember-forgot">
-                    <label><input type="checkbox"/>Remember me</label>
-                    <Link to="forgot">Forgot password?</Link>
-                </div>
 
-                <button type="submit" className="btnLogin">Login</button>
+                <button type="submit" className="btnLogin">Cadastrar</button>
             
                 <div className="cadastro-link">
-                    <p>Não possui uma conta? <Link to="cadastro">Cadastro</Link></p>
+                    <p>Já possui uma conta? <Link to="/">Login</Link></p>
                 </div>
             </form>
         </div>
     );
 }
 
-export default LoginForm;
+export default CadastroForm;
