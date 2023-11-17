@@ -4,9 +4,11 @@ import '../../styles/Login.css';
 
 function Login() {
   return (
-    <div>
-        <LoginForm/>
-    </div>
+    <body className='clientBody'>
+      <div>
+          <LoginForm/>
+      </div>
+    </body>
   );
 }
 

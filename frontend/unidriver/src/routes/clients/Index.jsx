@@ -1,6 +1,15 @@
+import BarraMaterias from "../../components/BarraMaterias";
+import '../../styles/Index.css'
+
 function Index(){
     return(
-        <h1>Página Inicial</h1>
+        <body className="indexBody">
+            <div className="wrapper">
+                <nav className="header"></nav>
+                <BarraMaterias />
+            </div>
+        </body>
+        
     )
 }
 

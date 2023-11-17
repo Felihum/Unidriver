@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 
 function Forgot(){
     return(
-        <p><Link to="/">Voltar para Login</Link></p>
+        <body className="clientBody">
+            <p><Link to="/">Voltar para Login</Link></p>
+        </body>
     );
 }
 export default Forgot;

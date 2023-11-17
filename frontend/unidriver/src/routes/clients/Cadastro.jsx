@@ -4,9 +4,11 @@ import '../../styles/Login.css';
 
 function Cadastro(){
     return(
-        <div>
-            <CadastroForm/>
-        </div>
+        <body className='clientBody'>
+            <div>
+                <CadastroForm/>
+            </div>
+        </body>
     );
 }
 
