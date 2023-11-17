@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import LoginForm from '../../components/LoginForm';
-import '../../Login.css';
+import '../../styles/Login.css';
 
 function Login() {
   return (
