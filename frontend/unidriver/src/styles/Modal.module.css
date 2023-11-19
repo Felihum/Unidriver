@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.bgModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    font-size: 24px;
+}
+
+.containerModal{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(228, 218, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgaba(255, 255, 255, .2);
+    border-radius: 30px;
+}
+
+.btnAdd{
+    background-color: rgb(201, 195, 195);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    width: 100px;
+    padding: 20px;
+    color: black;
+}
+
+.inputDiv{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputDiv input{
+    width: 90%;
+    height: 100%;
+    background: white;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+}
+
+.inputDiv input::placeholder{
+    color: rgb(199, 193, 193);
+}
+
+label{
+    font-family: "Poppins";
+    font-size: 26px;
+}
+
+.btnFechar{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    z-index: 1000;
+    margin-bottom: 16.9%;
+    margin-left: 27%;
+    cursor: pointer;
+}

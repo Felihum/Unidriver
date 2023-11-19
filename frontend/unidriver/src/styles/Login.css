@@ -72,6 +72,10 @@
   margin: -15px 0 15px;
 }
 
+.remember-forgot label{
+  font-size: 14.5px;
+}
+
 .remember-forgot label input{
   accent-color: rgb(255, 255, 255);
   margin-right: 3px;

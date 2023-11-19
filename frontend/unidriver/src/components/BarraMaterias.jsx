@@ -1,5 +1,8 @@
+//import { Modal } from '../components/Modal';
+
+
 function BarraMaterias(){
-    function addMateria(){
+    /*function addMateria(){
         const div1 = document.getElementById("div1");
 
         const divChild = document.createElement("div");
@@ -9,12 +12,11 @@ function BarraMaterias(){
         divChild.appendChild(conteudo)
 
         div1.appendChild(divChild)
-    }
+    }*/
 
     return(
         <div className="containerMaterias" id="div1">
             
-            <button onClick={addMateria} className="btnAdd">+</button>
         </div>
     )
 }
