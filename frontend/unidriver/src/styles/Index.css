@@ -22,13 +22,7 @@
     align-items: center;
     background-color: rgb(194, 185, 185);
     width: 250px;
-    height: 94.8vh;
-}
-
-.header{
-    background-color: black;
-    width: 100vw;
-    height: 50px;
+    height: 94.7vh;
 }
 
 .containerMaterias div{
@@ -67,4 +61,17 @@
 }
 .containerModal{
     margin: 0 auto;
+}
+
+.btnConfig{
+    position: absolute;
+    margin-left: 97%;
+    z-index: 1000;
+    background-color: transparent;
+    font-size: 37px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
 }
