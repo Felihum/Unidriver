@@ -6,24 +6,22 @@ import '../../styles/Index.css'
 import { useState } from "react";
 
 function Index(){
-
     let [openModal, setOpenModal] = useState(false);
     let [openBarra, setOpenBarra] = useState(false);
 
     return(
-        <body className="indexBody">
+        <div className="indexBody">
             <div className="wrapper">
                 <button style={!openBarra ? {color: "#ffffff"} : {color: "black"}} onClick={() => setOpenBarra(!openBarra)} className="btnConfig" id="btn"><i className='bx bx-menu'></i></button>
                 <BarraModal isOpen={openBarra} setOpen={setOpenBarra}/>
                 <Modal isOpen={openModal} setOpen={setOpenModal}/>
                 <NavBar />
                 <div className="containerBtnAdd">
-                    <button onClick={() => setOpenModal(!openModal)}>+</button>
+                    <button onClick={() => setOpenModal(true)}>+</button>
                 </div>
                 <BarraMaterias />
-                
             </div>
-        </body>
+        </div>
         
     )
 }

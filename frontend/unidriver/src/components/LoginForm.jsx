@@ -1,23 +1,44 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 
-function LoginForm(){
+function LoginForm({ users }){
     const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
     const navigate = useNavigate();
 
+    const emailInput = document.querySelector("#email");
+    const senhaInput = document.querySelector("#senha");
+    const remember = document.querySelector("#remember");
+    const paragrafoIncorreto = document.querySelector("#paragrafo-incorreto");
+
     function logar(e){
         e.preventDefault()
 
-        if(email != "" && senha != ""){
-            console.log(email)
-            navigate("index");
-        } else{
-            console.log("Falha no login!");
-            console.log(email)
-            console.log(senha)
-        }
+        users.map((user) => {
+            if(email == user.email){
+                if(senha == user.password){
+                    if(remember.checked){
+                        localStorage.setItem("name", user.name)
+                        localStorage.setItem("email", user.email)
+                        localStorage.setItem("senha", user.password)
+                    } else{
+                        sessionStorage.setItem("name", user.name)
+                        sessionStorage.setItem("email", user.email)
+                        sessionStorage.setItem("senha", user.password)
+                    }
+                    console.log(remember.value)
+                    navigate("index");
+                }
+            } else{
+                emailInput.value = ""
+                senhaInput.value = ""
+                setEmail(null)
+                setSenha(null)
+                paragrafoIncorreto.style.display = "block";
+            }
+        });
     }
 
     
@@ -35,8 +56,11 @@ function LoginForm(){
                     <i className='bx bxs-lock-alt'></i>
                 </div>
                 <div className="remember-forgot">
-                    <label><input type="checkbox"/>Remember me</label>
+                    <label><input id="remember" type="checkbox" />Remember me</label>
                     <Link to="forgot">Forgot password?</Link>
+                </div>
+                <div className="login-incorreto">
+                    <p id="paragrafo-incorreto">As credênciais não correspondem.</p>
                 </div>
 
                 <button type="submit" className="btnLogin">Login</button>

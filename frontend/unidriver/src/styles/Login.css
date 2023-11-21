@@ -119,3 +119,17 @@
 .cadastro-link p a:hover{
   text-decoration: underline;
 }
+
+.login-incorreto{
+  color: rgb(241, 12, 12);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.login-incorreto p{
+  display: none;
+}
