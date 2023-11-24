@@ -25,7 +25,6 @@ function Index(){
                     lista.push(materia)
                 }
             })
-            console.log(lista)
             setMaterias(lista)
         } catch(error){
             console.log(error);
