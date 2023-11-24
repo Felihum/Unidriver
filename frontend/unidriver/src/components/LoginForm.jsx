@@ -22,11 +22,11 @@ function LoginForm({ users }){
                     if(remember.checked){
                         localStorage.setItem("name", user.name)
                         localStorage.setItem("email", user.email)
-                        localStorage.setItem("senha", user.password)
+                        localStorage.setItem("id", user.id)
                     } else{
                         sessionStorage.setItem("name", user.name)
                         sessionStorage.setItem("email", user.email)
-                        sessionStorage.setItem("senha", user.password)
+                        sessionStorage.setItem("id", user.id)
                     }
                     console.log(remember.value)
                     navigate("index");

@@ -1,0 +1,25 @@
+.containerMaterias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(194, 185, 185);
+    width: 250px;
+    height: 94.8vh;
+}
+
+.containerMaterias div{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+
+.containerMaterias div:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.containerMaterias button{
+    background-color: rgb(255, 255, 255);
+}

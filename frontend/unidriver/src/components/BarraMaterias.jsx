@@ -1,22 +1,15 @@
-//import { Modal } from '../components/Modal';
+/* eslint-disable react/prop-types */
+import style from "../styles/BarraMateria.module.css"
 
-
-function BarraMaterias(){
-    /*function addMateria(){
-        const div1 = document.getElementById("div1");
-
-        const divChild = document.createElement("div");
-
-        const conteudo = document.createTextNode("Materia");
-
-        divChild.appendChild(conteudo)
-
-        div1.appendChild(divChild)
-    }*/
+function BarraMaterias({ materias }){
 
     return(
-        <div className="containerMaterias" id="div1">
-            
+        <div className={style.containerMaterias} id="div1">
+            {
+                materias.map((materia) => (
+                    <div key={materia.id}>{materia.name}</div>
+                ))
+            }
         </div>
     )
 }
