@@ -1,46 +1,67 @@
 {
-    "users":[
-        {
-            "id": 1,
-            "name": "Felipe",
-            "email": "felipemedeirosinfo@gmail.com",
-            "password": "123",
-            "university": "Unicarioca"
-        },
-
-        {
-            "id": 2,
-            "name": "João",
-            "email": "joao@gmail.com",
-            "password": "123",
-            "university": "UERJ"
-        }
-    ],
-    "subjects":[
-        {
-            "id": 1,
-            "name": "Cálculo",
-            "idUser": 1
-        },
-        {
-            "id": 2,
-            "name": "Arquitetura",
-            "idUser": 1
-        },
-        {
-            "id": 3,
-            "name": "Programação",
-            "idUser": 1
-        },
-        {
-            "id": 4,
-            "name": "Redação",
-            "idUser": 2
-        },
-        {
-            "id": 5,
-            "name": "Comunicação",
-            "idUser": 2
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Felipe",
+      "email": "felipemedeirosinfo@gmail.com",
+      "password": "123",
+      "university": "Unicarioca",
+      "image": "../images/perfil.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "João",
+      "email": "joao@gmail.com",
+      "password": "123",
+      "university": "UERJ",
+      "image": "../images/perfil.jpeg"
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Cálculo",
+      "idUser": 1
+    },
+    {
+      "id": 2,
+      "name": "Arquitetura",
+      "idUser": 1
+    },
+    {
+      "id": 3,
+      "name": "Programação",
+      "idUser": 1
+    },
+    {
+      "id": 4,
+      "name": "Redação",
+      "idUser": 2
+    },
+    {
+      "id": 5,
+      "name": "Comunicação",
+      "idUser": 2
+    },
+    {
+      "id": 7,
+      "name": "Teste",
+      "idUser": "2"
+    },
+    {
+      "id": 8,
+      "name": "adwdaws",
+      "idUser": "2"
+    },
+    {
+      "id": 9,
+      "name": "algoritmo",
+      "idUser": "1"
+    },
+    {
+      "id": 10,
+      "name": "afdadw",
+      "idUser": "1"
+    }
+  ]
 }

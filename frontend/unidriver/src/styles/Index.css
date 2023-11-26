@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
+:root{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,11 +17,11 @@
 }
 
 .containerBtnAdd{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    margin-top: 800px;
-    margin-left: 5%;
+    width: 100%;
+    
+}
+.wrapper{
+    width: 100%;
 }
 
 .containerBtnAdd button{
@@ -41,9 +41,19 @@
     margin: 0 auto;
 }
 
+.containerAuxConteudo{
+    display: flex;
+    flex-direction: row;
+}
+.cntModalConfig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
 .btnConfig{
-    position: absolute;
-    margin-left: 97%;
+    width: 100%;
     z-index: 1000;
     background-color: transparent;
     font-size: 37px;
@@ -52,4 +62,17 @@
     outline: none;
     cursor: pointer;
     color: #ffffff;
+}
+.containerGeral{
+    width: 100%;
+}
+.conteudo{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+
 }

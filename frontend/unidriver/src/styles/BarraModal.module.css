@@ -13,12 +13,12 @@
 
 .containerBarraModal{
     background-color: white;
-    width: 400px;
+    width: 350px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .containerBarraModal div{
@@ -28,10 +28,35 @@
     width: 100%;
     height: 100px;
     background-color: transparent;
-    margin-bottom: 100px;
 }
 
 .containerBarraModal a{
     text-decoration: none;
     color: black;
+}
+
+.containerBarraModal .containerPerfil{
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 0.5px gray;
+    
+}
+
+.containerBarraModal .containerPerfil p {
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.containerBarraModal .containerPerfil .fotoPerfil{
+    width: 70px;
+    height: 70px;
+    border-radius: 360px;
+
 }
