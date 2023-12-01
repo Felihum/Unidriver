@@ -5,6 +5,7 @@ import '../../styles/Index.css'
 import axios from "axios"
 import { useState, useEffect } from "react";
 import ContainerAnotacao from "../../components/ContainerAnotacao";
+import Pastas from "../../components/Pastas";
 
 function Index(){
     let [openModal, setOpenModal] = useState(false);
@@ -39,30 +40,37 @@ function Index(){
         <div className="indexBody">
             <div className="wrapper">    
                 <BarraModal isOpen={openBarra} setOpen={setOpenBarra}/>
+                
                 <div className="containerGeral">
                     <Modal isOpen={openModal} setOpen={setOpenModal}/>
+                    
                     <div className="containerAuxConteudo">
+                        
                         <div className="barraLateral">
+                            
                             <div className="cntModalConfig">
                                 <button style={!openBarra ? {color: "#ffffff"} : {color: "white"}} onClick={() => setOpenBarra(!openBarra)} className="btnConfig" id="btn"><i className='bx bx-menu'></i></button>
                             </div>
+                            
                             <BarraMaterias materias={materias} />
+                            
                             <div className="containerBtnAdd">
-                                <button onClick={() => {
-                                    if(materias != null){
-                                        console.log(materias)
-                                    }
-                                    console.log(materias)
-                                    setOpenModal(true);
-                                }}>+</button>
+                                <button onClick={() => { setOpenModal(true) }}>+</button>
                             </div>
+                        
                         </div>
+
                         <div className="conteudo">
                             <ContainerAnotacao />
+                            <Pastas />
                         </div>
+
                     </div>
+                
                 </div>
+            
             </div>
+        
         </div>
         
     )
